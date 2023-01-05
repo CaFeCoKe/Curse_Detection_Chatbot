@@ -11,3 +11,11 @@
 - Tokenizer의 사용법과 special token 추가<br>
 - 특수 문자의 반복으로 인한 비속어 감지 모델의 성능<br>
 - 챗봇 모델의 성능<br>
+&nbsp;&nbsp; 챗봇 데이터에는 Q, A, label로 이루어져 있다. 전에 했던 [챗봇 프로젝트](https://github.com/CaFeCoKe/KoGPT2_Chatbot) 와 마찬가지로 이번 프로젝트에서도 label부분을 사용하지 않았다.
+label은 일상다반사 0, 이별(부정) 1, 사랑(긍정) 2으로 되어 있는데 이를 사용하여 학습을 진행시킨다면 기존 모델의 성능과 얼마나 다른 차이가 있을지 추후 확인하도록 할 것이다. 
+
+## 4. 사용 모델과 데이터
+- [KcELECTRA](https://github.com/Beomi/KcELECTRA)
+- [KoGPT2](https://github.com/SKT-AI/KoGPT2)
+- [챗봇 데이터](https://github.com/songys/Chatbot_data)
+- [비속어 감지 데이터](https://github.com/2runo/Curse-detection-data)
