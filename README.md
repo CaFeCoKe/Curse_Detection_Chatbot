@@ -9,6 +9,8 @@
 
 ## 3. 주의점 및 개선점
 - Tokenizer의 사용법과 special token 추가<br>
+처음 계획은 하나의 tokenizer로 두 모델에 입력 텍스트를 토크나이징을 하려하였다. 이를 위해 [다른 tokenizer의 special token을 사용하려는 tokenizer의 special token으로 추가하는 작업](https://www.ohsuz.dev/22f4e8e7-64a3-4789-9dd2-171913883733) 을 거쳐 학습을 진행하였다.
+하지만 KcELECTRA의 tokenizer로 사용하여 비속어 감지 모델을 학습이 잘 되었으나, 챗봇 모델을 학습이 잘 되지 않는 현상이 있었고 두 모델의 사전학습에 쓰인 tokenizer가 기본적으로 구성이 다르다는 점을 깨닫고, 다시 각 모델에 맞는 tokenizer를 사용하여 학습을 끝마쳤다.
 <br><br>
 - 특수 문자의 반복으로 인한 비속어 감지 모델의 성능<br>
 &nbsp;&nbsp;soynlp의 repeat_normalze 메소드는 문자와 숫자의 반복을 줄여주지만 특수문자는 그렇지 않다는 것을 확인하였다. 그래서 비속어+특수문자 반복의 텍스트에 대해 비일관적인 성능을 가지게 되었다.<br>
