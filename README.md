@@ -7,7 +7,7 @@
 ## 2. 결과
 <table border ="0">
     <tr>
-      <td><img src="https://user-images.githubusercontent.com/86700191/210519072-148d8a94-7ef0-494e-bc1c-071a133aba2c.PNG" width="100%" height="100%"></td>
+      <td><img src="https://user-images.githubusercontent.com/86700191/214517702-12e636ea-3020-439a-97a5-a3b9b2a42cee.PNG" width="100%" height="100%"></td>
       <td><img src="https://user-images.githubusercontent.com/86700191/214499952-5920fef9-223d-4447-b4f1-a2dcac9b5872.PNG" width="100%" height="100%"></td>
     </tr>
     <tr>
@@ -29,7 +29,8 @@
 <br><br>
 - 챗봇 모델의 성능<br>
 &nbsp;&nbsp; 챗봇 데이터에는 Q, A, label로 이루어져 있다. 전에 했던 [챗봇 프로젝트](https://github.com/CaFeCoKe/KoGPT2_Chatbot) 와 마찬가지로 이번 프로젝트에서도 label부분을 사용하지 않았다.
-label은 일상다반사 0, 이별(부정) 1, 사랑(긍정) 2으로 되어 있는데 이를 사용하여 학습을 진행시킨다면 기존 모델의 성능과 얼마나 다른 차이가 있을지 추후 확인하도록 할 것이다. 
+label은 일상다반사 0, 이별(부정) 1, 사랑(긍정) 2으로 되어 있는데 이를 사용하여 학습을 진행시킨다면 기존 모델의 성능과 얼마나 다른 차이가 있을지 추후 확인하도록 할 것이다. <br>
+추가) label을 사용한 챗봇의 결과를 추가하였고, 일상다반사에 대한 모델의 결과 성능은 비슷하거나 살짝 좋아보이나 이별과 사랑에 대한 성능은 훨씬 더 나은 것을 확인할 수 있었다.
 
 ## 4. 사용 모델과 데이터
 - [KcELECTRA](https://github.com/Beomi/KcELECTRA)
