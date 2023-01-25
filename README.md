@@ -5,7 +5,16 @@
 ![Curse_detection_Chatbot](https://user-images.githubusercontent.com/86700191/209318615-442ba344-d6b8-453c-bf44-af1b3472c8de.png)
 
 ## 2. 결과
-![result](https://user-images.githubusercontent.com/86700191/210519072-148d8a94-7ef0-494e-bc1c-071a133aba2c.PNG)
+<table border ="0">
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/86700191/210519072-148d8a94-7ef0-494e-bc1c-071a133aba2c.PNG" width="100%" height="100%"></td>
+      <td><img src="https://user-images.githubusercontent.com/86700191/214499952-5920fef9-223d-4447-b4f1-a2dcac9b5872.PNG" width="100%" height="100%"></td>
+    </tr>
+    <tr>
+      <td align ="center">label 사용 X</td>
+      <td align ="center">label 사용 O</td>
+    </tr>
+   </table>
 
 ## 3. 주의점 및 개선점
 - Tokenizer의 사용법과 special token 추가<br>
